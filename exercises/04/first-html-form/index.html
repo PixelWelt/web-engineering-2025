@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+    <form method="post" action="post.php">
+        <input type="text" name="vorname" placeholder="Vorname" maxlength="20" required />
+        <input type="text" name="nachname" placeholder="Name" maxlength="16" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <input type="email" name="E-Mail-Adresse" placeholder="Email" required />
+        <select name="Kreditkartentyp">
+        <option value="AmEx">AmEx</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="Visa">Visa</option>
+        </select>
+        <input type="number" name="Kreditkarten-nummer" placeholder="Kreditkartenummer" maxlength="16" required/>
+        <fieldset>
+        <legend>Terms and Conditions</legend>
+        <p>
+            <input type="checkbox" name="terms" required />
+            I have read and agree to the <a href="terms-and-conditions.html">Terms and Conditions of Buku Buku.</a>
+        </p>
+        </fieldset>
+        <input type="submit" value="Get free Cash Now" />
+    </form>
+</body>
