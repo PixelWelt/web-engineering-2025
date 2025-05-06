@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <img src="logo.png">
+    <form>
+        <fieldset>
+            <legend>Basic Data</legend>
+            <label for="ISBN">ISBN</label>
+            <input type="text" name="ISBN" placeholder="000-0000000000" pattern="^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$">
+            <label for="title">Title</label>
+            <input type="text" name="title" placeholder="Title of the book" required>
+            <label for="author">Author</label>
+            <input type="text" name="author" placeholder="Author of the book" required>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Data</legend>
+            <label for="publication-date">Publish Date</label>
+            <input type="date" name="publication-date" required>
+            <label for="number-of-pages">Number of Pages</label>
+            <input type="number" name="number-of-pages" min="1" max="10000" required>
+            <fieldset>
+                <legend>Formats</legend>
+                    <input type="checkbox" name="audio-book" value="audio-book"> Audio Book
+                    <input type="checkbox" name="hardcover" value="hardcover"> Hardcover
+                    <input type="checkbox" name="kindle-edition" value="kindle-edition"> Kindle Edition
+                    <input type="checkbox" name="mp3" value="mp3"> MP3 CD
+            </fieldset>
+        </fieldset>
+        <input type="submit" value="Create Book in Database">
+    </form>
+    <a href="terms-and-conditions.html">Terms and Conditions for Boku Boku</a>
+
+</body>
